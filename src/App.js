@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ActorModel from './data-model/ActorModel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ActorGallery from './components/ActorGallery/ActorGallery';
 
 
 

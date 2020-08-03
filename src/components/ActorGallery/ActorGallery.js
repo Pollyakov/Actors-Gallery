@@ -6,7 +6,7 @@ import ActorModel from '../../data-model/ActorModel';
 class ActorGallery extends React.Component {
     constructor(props) {
         super(props);}
-    render() {
+    render() {  
             let contentToRender;
                 const actorCardRow = this.props.actors.map(ActorModel =>
                     <tr >

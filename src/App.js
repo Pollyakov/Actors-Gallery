@@ -3,6 +3,7 @@ import './App.css';
 import ActorModel from './data-model/ActorModel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ActorGallery from './components/ActorGallery/ActorGallery';
+import ActorComp from './components/ActorComp/ActorComp';
 
   
 
@@ -19,7 +20,9 @@ console.log(actor1);
 const actorsData = [actor1, actor2, actor3];
   return (
     <div>
-     <ActorGallery actors={actorsData}/>
+      {/* <ActorModel actor={actor1}/> */}
+      <ActorComp actor={actor1}/>
+     {/* <ActorGallery actors={actorsData}/> */}
     </div>
   );
 }

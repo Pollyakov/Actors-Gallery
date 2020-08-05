@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
-
 import ActorModel from '../../data-model/ActorModel';
 
 class ActorGallery extends React.Component {

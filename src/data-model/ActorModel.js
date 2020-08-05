@@ -1,7 +1,6 @@
 //https://momentjs.com/
 import moment from 'moment';
 
-
 class ActorModel {
   constructor(fname, lname, birthday, IMDBlink, img) {
     this.fname = fname;

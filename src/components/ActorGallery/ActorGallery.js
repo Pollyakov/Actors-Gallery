@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
-import ActorGallery from './components/ActorGallery/ActorGallery';
+
 import ActorModel from '../../data-model/ActorModel';
 
 class ActorGallery extends React.Component {
@@ -13,8 +13,8 @@ class ActorGallery extends React.Component {
                         <td>{ActorModel.fname}</td>
                         <td>{ActorModel.lname}</td>
                         <td>{ActorModel.birthday}</td>
-                        <td>{ActorModel.IMDBlink}</td>
-                        <td>{ActorModel.img}</td>
+                        <td><a target="_blank" href={ActorModel.IMDBlink}>{ActorModel.IMDBlink}</a></td>
+                        <td><img src={ActorModel.img}></img></td>
                         {/* //<td>{ActorModel.AgeofActor()}</td> */}
                     </tr>);
                 contentToRender =                     
@@ -27,7 +27,7 @@ class ActorGallery extends React.Component {
                 <Container>
                     {contentToRender}
                 </Container>
-            );
+            ); 
             }    
         }
 export default ActorGallery;

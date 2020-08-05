@@ -9,12 +9,11 @@ class ActorComp  extends React.Component {
         super(props);
     }
         render() {
-            return <h1>{this.props.actor.fname}</h1>;
+        <div>
+        <img src={this.props.actor.img}></img>
+        <a className="actor-comp" href={this.props.actor.imdb}> {this.props.actor.fname+ ' ' + this.props.actor.lname}</a>
+        </div>
           }
         }
-
-
-
-
 
 export default ActorComp;

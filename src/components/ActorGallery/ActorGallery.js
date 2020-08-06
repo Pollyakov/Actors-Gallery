@@ -10,7 +10,7 @@ class ActorGallery extends React.Component {
         super(props);}
     render() {  
             let contentToRender;
-                const actorCardRow = this.props.actors.map(actor =><ActorComp/>);
+                const actorCardRow = this.props.actors.map(actor =><ActorComp actor={actor}/>);
                     // <tr >
                     //     <td>{ActorModel.fname}</td>
                     //     <td>{ActorModel.lname}</td>

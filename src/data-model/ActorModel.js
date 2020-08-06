@@ -9,10 +9,10 @@ class ActorModel {
     this.IMDBlink = IMDBlink;
     this.img = img;
   }
-  ageOfActor() {
-   //return  moment("19011982", "YYYYMMDD").fromNow();
-    return moment().startOf('day').fromNow(); 
-  }
+  // ageOfActor() {
+  //  //return  moment("19011982", "YYYYMMDD").fromNow();
+  //   return moment().startOf('day').fromNow(); 
+  // }
 }
 
 export default ActorModel;

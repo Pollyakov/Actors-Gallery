@@ -1,20 +1,24 @@
 import React from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { Container, Table, Card } from 'react-bootstrap';
 import ActorModel from '../../data-model/ActorModel';
-
-//Create an ActorComp component that receives an actor object as prop and renders its name
-
 class ActorComp  extends React.Component {
     constructor(props) {
         super(props);
     }
         render() {
         return (
-        <div>
-        <img src={this.props.actor.img}></img>
-        <a className="actor-comp" href={this.props.actor.IMDBlink}> {this.props.actor.fname+ ' ' + this.props.actor.lname}</a>
-        <h1>Was born in {this.props.actor.birthday.substr(0,4)}</h1>
-        </div>
+         <Container>
+  <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={this.props.actor.img}/>
+  <Card.Body>
+    <Card.Title>{this.props.actor.fname+ ' ' + this.props.actor.lname}</Card.Title>
+      Was born in {this.props.actor.birthday.substr(0,4)}
+    <Card.Text>
+    <Card.Link href={this.props.actor.IMDBlink}>IMDBlink</Card.Link>
+    </Card.Text>
+  </Card.Body>
+  </Card> 
+</Container> 
         );
           }
         }

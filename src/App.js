@@ -21,10 +21,8 @@ const actor3 = new ActorModel("Joaquin", "Phoenix", "19742810", "https://www.imd
 //   return wholedate;
 //   }
 const actorsData = [actor1, actor2, actor3];
-// let actorData = [<ActorComp/>, <ActorComp/>, <ActorComp/>];
   return (
     <div>
-      {/* <ActorComp actor={actor1}/> */}
      <ActorGallery actors={actorsData}/>
     </div>
   );

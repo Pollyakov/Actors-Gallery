@@ -9,7 +9,6 @@ class ActorComp  extends React.Component {
         return (
         //  <Container>
         <div>
-
   <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={this.props.actor.img}/>
   <Card.Body>

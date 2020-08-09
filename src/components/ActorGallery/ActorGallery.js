@@ -17,26 +17,27 @@ class ActorGallery extends React.Component {
                 value: event.target.value,
             });
         }
-        
-    render() { 
-        // {names.filter(name => name.includes('J')).map(filteredName => (
-            const filterActor = this.props.actors.filter((actor)=>
-                actor.fname.includes(this.state.value));
-                
-      
-            const actorCardRow = this.props.actors.map(actor =>
-            <Col lg={true}><ActorComp actor={actor}  key={actor.toString()}/></Col>);
+    render() 
+            {
+            const filteredCards = this.props.actors.filter(actor=>
+                actor.fname.includes(this.state.value)).map(filteredCard =>
+                    
+                        ( 
+                    <Col lg={true}><ActorComp actor={filteredCard} key={filteredCard.toString()}/></Col>
+                        ))
+
+                        
             return (
                 <div>   
                 <input type="search" value={this.state.value} onChange={(event)=>this.handleOnchange(event)}></input>     
                 <Container>
                         <Row>
-                            {actorCardRow}
-                            {console.log(this.state.value)}
+                            {filteredCards} 
                         </Row>
                 </Container>
                 </div>
                    ); 
             }    
         }
+          
 export default ActorGallery;

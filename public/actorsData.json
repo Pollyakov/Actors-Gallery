@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "fname": "Natalie",
+        "lname": "Portman",
+        "birthday": "19810609",
+        "IMDBlink": "https://www.imdb.com/name/nm0000204/?ref_=tt_cl_t3",
+        "img":"https://m.media-amazon.com/images/M/MV5BMTQ3ODE3Mjg1NV5BMl5BanBnXkFtZTcwNzA4ODcxNA@@._V1_SY1000_SX746_AL_.jpg" 
+    },
+    {
+        "id": "2",
+        "fname": "Jean",
+        "lname": "Reno",
+        "birthday": "19483007",
+        "IMDBlink": "https://www.imdb.com/name/nm0000606/?ref_=tt_cl_t1",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTgzNjA1MjY2M15BMl5BanBnXkFtZTYwMjgzOTk0._V1_UX214_CR0,0,214,317_AL_.jpg"
+    },
+    {
+        "id": "3",
+        "fname": "Joaquin",
+        "lname": "Phoenix",
+        "birthday": "19742810",
+        "IMDBlink":"https://www.imdb.com/name/nm0001618/",
+        "img":"https://m.media-amazon.com/images/M/MV5BZGMyY2Q4NTEtMWVkZS00NzcwLTkzNmQtYzBlMWZhZGNhMDhkXkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_UX214_CR0,0,214,317_AL_.jpg"
+    }
+    
+]

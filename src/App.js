@@ -30,6 +30,7 @@ class App extends React.Component {
      return (
     <div>
      <ActorGallery actors={this.state.actors}/>
+     <MovieComponent/>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Container, Table, Col, Row, Form } from 'react-bootstrap';
 import ActorModel from '../../data-model/ActorModel';
 import ActorComp from '../ActorComp/ActorComp';
 import './ActorsGallery.css';
+
 //In ActorGallery render multiple ActorComp components 
 //(using map or for loop) and pass the actor object to 
 //each ActorComp instance - You should see all the name of all the actors
@@ -38,6 +39,7 @@ class ActorGallery extends React.Component {
                             {filteredCards} 
                         </Row>
                 </Container>
+                
                 </div>
                    ); 
             }    

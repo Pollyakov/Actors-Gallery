@@ -2,10 +2,9 @@ import React from 'react';
 import './App.css';
 import MovieModel from './data-model/MovieModel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LiveSearchBox from '../LiveSearchBox/LiveSearchBox';
 
 
-class MovieComponent extends React.Component {
+class LiveSearchBox extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +15,7 @@ class MovieComponent extends React.Component {
 
   render() {
       return( <div>
-          <LiveSearchBox/>
+          Privet!
       </div>
          
        );
@@ -25,4 +24,4 @@ class MovieComponent extends React.Component {
   
 }
 
-export default MovieComponent;
+export default LiveSearchBox;

@@ -6,14 +6,16 @@ class LiveSearchBox extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
-       smthing: "",
+       searchText: "",
     }
+
   }
    
 
   render() {
+    const {placeholderText}=this.props;
       return( <div>
-          <input></input>
+          <input type="search" placeholder={placeholderText}></input>
       </div>
          
        );

@@ -1,6 +1,4 @@
 import React from 'react';
-import './App.css';
-import MovieModel from './data-model/MovieModel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -15,7 +13,7 @@ class LiveSearchBox extends React.Component {
 
   render() {
       return( <div>
-          Privet!
+          <input></input>
       </div>
          
        );
